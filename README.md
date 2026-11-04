@@ -2,9 +2,9 @@
 
 Data and manuscript for **Xu, Z. (2025), *Cosmic quenching and scaling laws for the evolution of supermassive black holes and host galaxies*, MNRAS 536(4), 3554–3587, doi:[10.1093/mnras/stae2766](https://doi.org/10.1093/mnras/stae2766), arXiv:[2501.07608](https://arxiv.org/abs/2501.07608)**.
 
-The complete archive, with the same files, is on Zenodo: [doi:ZENODO_DOI_PENDING](https://doi.org/ZENODO_DOI_PENDING).
+The complete archive, with the same files, is on Zenodo: [doi:10.5281/zenodo.23961665](https://doi.org/10.5281/zenodo.23961665).
 
-[![DOI](https://zenodo.org/badge/DOI/ZENODO_DOI_PENDING.svg)](https://doi.org/ZENODO_DOI_PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23961665.svg)](https://doi.org/10.5281/zenodo.23961665)
 
 ## Major findings
 
@@ -40,7 +40,7 @@ Figure files are named by the figure number of the article (for example `Fig09_B
 
 ## Citation
 
-Please cite the article (doi:10.1093/mnras/stae2766) and this archive (doi:ZENODO_DOI_PENDING). GitHub's "Cite this repository" button uses `CITATION.cff`.
+Please cite the article (doi:10.1093/mnras/stae2766) and this archive (doi:10.5281/zenodo.23961665). GitHub's "Cite this repository" button uses `CITATION.cff`.
 
 ## Licence
 
