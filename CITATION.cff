@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use these data or the manuscript, please cite the article and this archive."
+title: "Supermassive black hole and host galaxy data and manuscript: cosmic quenching and scaling laws"
+type: dataset
+authors:
+  - family-names: Xu
+    given-names: Zhijie
+    orcid: "https://orcid.org/0000-0003-0459-4531"
+    affiliation: "Pacific Northwest National Laboratory"
+version: "1.0"
+date-released: "2026-11-04"
+doi: "ZENODO_DOI_PENDING"
+license: CC-BY-4.0
+preferred-citation:
+  type: article
+  title: "Cosmic quenching and scaling laws for the evolution of supermassive black holes and host galaxies"
+  authors:
+    - family-names: Xu
+      given-names: Zhijie
+  journal: "Monthly Notices of the Royal Astronomical Society"
+  volume: 536
+  issue: 4
+  start: 3554
+  end: 3587
+  year: 2025
+  doi: "10.1093/mnras/stae2766"
+references:
+  - type: article
+    title: "Cosmic quenching and scaling laws for the evolution of supermassive black holes and host galaxies (arXiv)"
+    authors:
+      - family-names: Xu
+        given-names: Zhijie
+    doi: "10.48550/arXiv.2501.07608"
+  - type: dataset
+    title: "Super-Eddington growth of supermassive black holes and scaling laws for SMBH-host coevolution"
+    authors:
+      - family-names: Xu
+        given-names: Zhijie
+    doi: "10.5281/zenodo.7490501"

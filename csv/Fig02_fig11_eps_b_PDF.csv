@@ -1,0 +1,50 @@
+# Publisher,Zhijie Xu,zhijie.xu@pnnl.gov,zhijiexu@hotmail.com
+# Updated,11/2026
+#Name,Fig. 2 of the paper: plotted data (log-normal curve only; the histogram bars are not in the .fig (recomputed from Table B1))
+#Ref. [1] This paper,https://doi.org/10.1093/mnras/stae2766,"Z. Xu 2025, MNRAS 536, 3554: Cosmic quenching and scaling laws for the evolution of SMBHs and host galaxies"
+#Note,source: author MATLAB figure fig11_eps_b_PDF.fig (md5 8e8bd3c101de51bfc511d8dc62618a4b)
+#Note,axes labels: log_{10}(\epsilon_b); Probability density
+,
+,
+x[0] unnamed,y[0] unnamed
+-6,1.59667839e-05
+-5.9,5.01120029e-05
+-5.8,0.00014774836
+-5.7,0.00040922313
+-5.6,0.00106476624
+-5.5,0.00260258525
+-5.4,0.0059760229
+-5.3,0.0128906891
+-5.2,0.0261214099
+-5.1,0.0497248734
+-5,0.0889216175
+-4.9,0.149381775
+-4.8,0.235746077
+-4.7,0.3495006
+-4.6,0.486752256
+-4.5,0.636831614
+-4.4,0.782704538
+-4.3,0.903707078
+-4.2,0.980198673
+-4.1,0.998750781
+-4,0.955997482
+-3.9,0.859632764
+-3.8,0.726149037
+-3.7,0.576229074
+-3.6,0.429557358
+-3.5,0.300817954
+-3.4,0.197898699
+-3.3,0.122303453
+-3.2,0.0710053537
+-3.1,0.0387257704
+-3,0.0198410947
+-2.9,0.0095496574
+-2.8,0.00431784001
+-2.7,0.00183401083
+-2.6,0.000731802419
+-2.5,0.000274310467
+-2.4,9.65934137e-05
+-2.3,3.19528238e-05
+-2.2,9.92950431e-06
+-2.1,2.89869477e-06
+-2,7.94939362e-07

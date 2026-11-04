@@ -1,0 +1,124 @@
+# Publisher,Zhijie Xu,zhijie.xu@pnnl.gov,zhijiexu@hotmail.com
+# Updated,11/2026,,
+#Name,Equation-by-equation audit,,
+#Ref. [1] This paper,https://doi.org/10.1093/mnras/stae2766,"Z. Xu 2025, MNRAS 536, 3554",
+,,,
+,,,
+eq,status,check,value
+1,pass,"sigma^3/r_b = B/(A gamma_r G) with GM_b = r_b sigma^2/gamma_r, gamma_r = 1/3",
+2,pass,M_BH = A sigma^5 = B sigma^5/(eps gamma_r G),
+3,cited,"Ferrarese & Ford 2005, Marconi & Hunt 2003; gives eps_b0 = (0.84-0.92)e-4 for sigma = 150-300 km/s (N1)",8.71e-05
+4,fixed,E1: the exponent lacks the square; Fig. 2 curve is exp[-((x+4.12)/0.4)^2/2],2.8e-17
+5,definition,eps_r = sigma_r^3/r,
+6,pass,eps_r t_r = sigma_r^2 and eps_r independent of t_r: d(eps_r t_r)/dt_r = eps_r (algebra),
+7,pass,sigma^2 propto (G m_r eps)^(2/5): d sigma^2/d m_r = (2/5) sigma^2/m_r,
+8,pass,from Eqs 6-7 (chain rule),
+9,definition,energy balance of a shell,
+10,definition,eps_a = Gamma n_H/m_p; eps = 1e-4 m^2/s^3 <=> Gamma ~ 1e-24 erg cm^3/s for n_H = 1-2 cm^-3,6e-05-0.00012 m^2/s^3
+11,definition,"cumulative mass/kinetic-energy functions, velocity decomposition, virial energy",
+12,definition,"cumulative mass/kinetic-energy functions, velocity decomposition, virial energy",
+13,definition,"cumulative mass/kinetic-energy functions, velocity decomposition, virial energy",
+14,definition,"cumulative mass/kinetic-energy functions, velocity decomposition, virial energy",
+15,definition,"eps = sigma_g^3/r, K = sigma_g^2/2 = (eps r)^(2/3)/2",
+16,model,eps propto m_h^(2/3): fitted exponents of Fig. 7,"0.69, 0.73, 0.69, 0.96, 0.87"
+17,model,eps_b = eps_b0 a^-5/2: Fig. 8 points give a^-2.17 (a^-2.56 for a >= 0.5); eps_b(z=0) = 1.2e-4 (N3),-2.17
+18,pass,"virial sigma^2 propto G m_r/r with Eq. 15: m_r propto eps^(2/3) r^(5/3), sigma^5 propto eps G m_r (exponent algebra)",
+19,pass,"fixed M_b: r_b propto a, sigma_b^2 propto a^-1, rho_b propto a^-3",
+20,pass,r_b = [G M_b/(alpha_r eps_b0^(2/3))]^(3/5) (1+z)^-1; Fig. 10 model lines use alpha_r = 1.7,1.692
+21,pass,rho_r = beta_r eps^(2/3) r^(-4/3)/G with beta_r = 3 alpha_r/(4 pi) (mean density inside r),
+22,pass,"sigma_r^2, P_r, F_r = 3 sigma_r^4/(gamma_r G)",
+23,pass,mdot_r = m_r/t_r propto eps r/G; M_b-dot propto eps_b r_b propto a^(-3/2) propto t^-1 (EdS) (exponent algebra),
+24,pass,"r_b, r_B from Eq. 21; r_s = 2GM/c^2",
+25,pass,r_p from P_rad = P_r,
+26,pass,"nu(r_s) = alpha c_s H with c_s = (H/r) V_k, V_k^2 = GM/r_s = c^2/2: z_r = alpha (H_s/r_s)^2/sqrt 2",
+27,pass,r_x = (nu_s^3/eps)^(1/4),
+28,definition,"beta, gamma, eta",
+29,approx,proportionalities L_B ~ beta Mdot_b sigma_b^2 ~ ... (no coefficients),
+30,pass,"sigma_p propto (G L/c)^(1/4) (coefficient (gamma_r/3)^(1/4), Eq. 38)",
+31,pass,"six length ratios in gamma, eta",
+32,pass,M_BH/M_b = beta/gamma = (r_B/r_b)^(5/3) = (sigma_B/sigma_b)^5 (from Eq. 21-22),
+33,pass,"L = Mdot eps c^2/(1-eps), dt = da/(H0 a^-1/2) (Einstein-de Sitter); L0 recomputed 4.9e43 vs printed 4.45e43 erg/s (10%)",4.94e+43
+34,pass,"r_p = r_B <=> gamma eta = (3 alpha^2 gamma_r)^(5/4)/alpha (= 8 for alpha_r = 4, gamma_r = 1/3; 12 with the Table B1 constants)",6.14
+35,pass,upper-limit luminosity,
+36,pass,r_p = r_s <=> gamma = 2 (3 alpha^2 gamma_r)^(3/4) eta,
+37,pass,lower-limit luminosity,
+38,pass,sigma_p/c = (gamma_r/3)^(1/4) eta,
+39,pass,sigma_B and M_BH(sigma_B),
+40,pass,Eq. 39 with sigma_B^5 = B sigma_b^5 (Eq. 32),
+41,approx,"M_BH = 1e8 (sigma/200)^5: Eq. 40 with B = 0.0025, alpha_r = 1.7, alpha_r gamma_r = 1 gives 1.03e8; Fig. 15 z=0 line 1.01e8",1.01e+08
+42,pass,"r_p = r_x <=> gamma_c = 6 z_r alpha^2 gamma_r (= 10.7 for z_r = 1/3, alpha_r = 4, gamma_r = 1/3)",
+43,definition,general power law L = alpha0 eps^p M^(1-sigma),
+44,definition,dM/dt = L (1-eps)/(eps c^2),
+45-46,pass,"closed form vs numerical integration of Eq. 44 (p=0.8, sigma=0.2)",6.7e-13
+45-46 (sigma<0),pass,"closed form vs numerical integration of Eq. 44 (p=1.33, sigma=-0.333)",5.4e-11
+47,pass,r_p = xi_r r_B in Eq. 31,
+48,pass,Eq. 35 with gamma eta scaled by xi_r^(5/3) -> L scaled by xi_r^(4/3),
+49,pass,M_b = L/(beta eps),
+50,pass,lambda = L/L_Edd propto eps^(4/5) M^(-1/5) propto a^-2 M^(-1/5),
+51,pass,"Eq. 45 with p = 4/5, sigma = 1/5 (exponent -1/2); plotted E1 curve: M_inf1 = 1.318e11, a1 = 0.142",0.0139
+52,pass,Eq. 38 with Eq. 48,
+53,model,L = gamma* eps*^(1-p) eps^p M (dimensional argument),
+54,fixed,exponents correct for t_p = r_p/sigma_p; the text defined t_p = sigma_p/r_p (E2),
+55,pass,Eq. 54 with p = 2,
+56,pass,sigma -> 0 limit of Eq. 45; plotted E2 curve: a2 = 0.31 exactly,
+57,approx,"a2 from gamma* = 250, eps* = 0.0025: 0.287; with the plotted peak (285, 0.0024): 0.301; text 0.31 (N9)",0.301
+58,pass,Eq. 38 with Eq. 53,
+59,pass,"Eq. 45 with p = 4/3, sigma = -1/3 (exponent -11/6)",
+60,pass,Eq. 37 with Eq. 38: M = sigma_p^3 c^2/(2 alpha^(3/2) gamma_r^(3/2) eps G),
+61,cited,continuity equation in log units (Tucci et al. 2017),
+62,definition,"lambda, eps_Edd = L_Edd/M = 6.32 m^2/s^3",6.322
+63,definition,definitions / integrals of the continuity equation,
+64,definition,definitions / integrals of the continuity equation,
+65,approx,lambda_min = gamma_c eps_b0/eps_Edd a^-5/2 = 1.6e-4 a^-5/2 for gamma_c = 10 (text: ~1e-4; Fig. 21 uses 1e-4) (N10),
+66,definition,definitions / integrals of the continuity equation,
+67,definition,definitions / integrals of the continuity equation,
+68,pass,definitions / integrals of the continuity equation,
+69,pass,definitions / integrals of the continuity equation,
+70,pass,definitions / integrals of the continuity equation,
+71,definition,definitions / integrals of the continuity equation,
+72,definition,definitions / integrals of the continuity equation,
+73,pass,characteristic solution of Eq. 61 vs the Fig. 16 curves (max |dlog Phi|),0.003
+74,pass,characteristic solution of Eq. 61 vs the Fig. 16 curves (max |dlog Phi|),7.9e-07
+75,definition,Model 3: L = lambda_f eps_Edd M,
+76,fixed,"formula correct; the plotted a3 = 0.283/0.250 correspond to lambda_f = 0.010/0.012 for eps = 0.03, not eps = 0.1 (E4)",
+77,model,interpolation; Fig. 16 complete curves reproduced to < 1e-6 dex,
+78,model,local BHMF (lambda1 = 1.001 in the figure); rho_BH0 = 7.1e5 Msun/Mpc^3,7.13e+05
+79,pass,x-th moment by quadrature (x=0.5),-2.2e-16
+79 (x=1.0),pass,x-th moment by quadrature (x=1.0),0.0e+00
+79 (x=1.7),pass,x-th moment by quadrature (x=1.7),-4.6e-15
+80,pass,rho_BH = e^-Y2 rho_BH0 (substitution),
+81,pass,dlog Y = (M/Y)^sigma dlog M (substitution),
+82,definition,convolution,
+83,cited,double power law (Shen et al. 2020),
+84,cited,Shen et al. 2020 global fit B; the Fig. 19 curves use a cubic fit of gamma_1 (<= 0.005 different) (N14); gamma_1(z=7) = 0.203,0.203
+85,pass,"Eqs 51, 56 in Eq. 72 give Eq. 85; plotted L*_1, L*_2 reproduced",3.3e-16
+86,model,interpolation; plotted complete L* within 11%,0.11
+87,approx,M* from Eq. 35 without the coefficient 3 alpha_r^(6/5) gamma_r; plotted M* reproduced,1.1e-14
+88,model,piecewise power-law AGN mass function,
+89,pass,B1: faint-end matching Phi_hat_L = B1 (L/L*)^-gamma1 <P (lambda/lambda0)^gamma1> = phi* (L/L*)^-gamma1 (quadrature),3.8e-15
+90,pass,"two-stage duty cycle; Fig. 22 reproduced with alpha1 = 1e9, alpha2 = 7.9e3 (rel. 8e-4)",7.8e-04
+91,model,"interpolation (x_b = 0.75, M_sigma = 0.6, M_c = 1e7 a^-5)",
+92,definition,AGN mass function = Phi_BH U,
+93,model,fit to Tucci et al. <lambda>; plotted curve reproduced,2.2e-16
+94,pass,Eq. 56 in Model 2,
+95,pass,ratio of Eq. 94 at a and a_p,
+96,approx,first-order asymptotic inversion: exact t_q/t_p vs Eq. 96 at a = 10 a_p,3.27e-02
+96 (a=10 a_p),approx,first-order asymptotic inversion: exact t_q/t_p vs Eq. 96 at a = 33 a_p,5.22e-03
+97,approx,ergodic estimate delta = t_q/t_H,
+98,model,generalised Schechter form; Fig. 25 curves reproduced with alpha = 0.6 a^(2/3) (N13),
+99,pass,moment formula (gamma = 0) vs quadrature: A normalises P,-1.2e-15
+100,pass,normalisation factor A (Eq. 99 with gamma = 0),
+101,model,"global fits of alpha, beta, tau; plotted lines reproduced",6.7e-16
+102,pass,a_Edd = 4 pi G m_p/sigma_T = 2.11e-8 m/s^2; eps_Edd = 6.32 m^2/s^3; L_Edd = 1.26e38 erg/s per Msun,2.11e-08
+103,approx,force balance without coefficients,
+104,pass,Eq. 21 at r_B,
+105,pass,sigma_p^2 propto (eps r_B)^(2/3) propto (M G eps)^(2/5),
+106,pass,L_X = x_r eps^(4/5) G^(-1/5) c M^(4/5); x_r = 15 in Fig. 26 (lines reproduced),15.00
+107,pass,eps_b^(4/5) = eps_b0^(4/5) (1+z)^2,
+A1,pass,"gamma_ob, eta_ob of Table A1 recomputed (within 1%: GN-z11 682 vs 688.4)",J0313-1806: 196.4; CEERS 1019: 242.9; UHZ-1: 123.3; Abell2744-QSO1: 99.9; GNz11: 681.9
+A2,model,interpolated path; plotted paths reproduced,6.3e-15
+A3,pass,"eta(gamma_ob) = eta_ob with c1 = x eta gamma, c2 = eta gamma^-1/2/x",
+A4,pass,inversion of Eq. 28 with eps_b = eps_b0 a^-5/2,
+A5,pass,Eq. 33,
+A6,pass,d ln a/d ln theta of the plotted a(theta) (Fig. A2) vs the right-hand side: median ratio,8.4e-09
+A7,cited,"Eddington growth, t_Sal = 4.5e8 eps/(1-eps) yr",

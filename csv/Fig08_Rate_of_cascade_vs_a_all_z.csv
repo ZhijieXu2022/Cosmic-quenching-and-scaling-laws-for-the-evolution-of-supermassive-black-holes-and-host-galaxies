@@ -1,0 +1,14 @@
+# Publisher,Zhijie Xu,zhijie.xu@pnnl.gov,zhijiexu@hotmail.com
+# Updated,11/2026,,
+#Name,"Fig. 8 of the paper: plotted data (epsilon_b(a), mean epsilon(a))",,
+#Ref. [1] This paper,https://doi.org/10.1093/mnras/stae2766,"Z. Xu 2025, MNRAS 536, 3554: Cosmic quenching and scaling laws for the evolution of SMBHs and host galaxies",
+#Note,source: author MATLAB figure Illustris_figures/Rate_of_cascade_vs_a_all_z.fig (md5 995708a588fa6e39cc0de17df741dc36),,
+#Note,axes labels: Scale factor a; Parameter $\varepsilon_b$ ($m^2/s^3$),,
+,,,
+,,,
+x[0] $\varepsilon_b$(z),y[0] $\varepsilon_b$(z),x[1] $\overline \varepsilon(z)$,y[1] $\overline \varepsilon(z)$
+0.199600798,0.0034,0.199600798,7.3e-05
+0.333333333,0.00195,0.333333333,3.4e-05
+0.5,0.0007,0.5,1.4e-05
+0.763358779,0.00022,0.763358779,6.2e-06
+1,0.00012,1,2.7e-06

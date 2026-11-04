@@ -1,0 +1,46 @@
+# Publisher,Zhijie Xu,zhijie.xu@pnnl.gov,zhijiexu@hotmail.com
+# Updated,11/2026
+#Name,"All tableB1 values of the reproducibility pipeline (results/tableB1.json, flattened)"
+#Ref. [1] This paper,https://doi.org/10.1093/mnras/stae2766,"Z. Xu 2025, MNRAS 536, 3554"
+#Note,SI units unless the key names a unit
+,
+,
+quantity,value
+n_rows,180
+n_with_MBH,135
+n_with_L,177
+types.,107
+types.BCG,21
+types.Galaxy,1
+types.HII,1
+types.LINER,15
+types.Sayfert,1
+types.Seyfert,34
+r_b_maxrel,0.251180542
+r_b_n,180
+eps_b_maxrel,0.0886553947
+eps_b_n,180
+constants_from_columns.r_s.maxrel,0.0530615803
+constants_from_columns.r_s.n,135
+constants_from_columns.r_B.alpha_r,5.26085254
+constants_from_columns.r_B.spread,0.0154503968
+constants_from_columns.r_B.n,135
+constants_from_columns.r_p.three_alpha2_gamma,27.9114003
+constants_from_columns.r_p.spread,0.0266493482
+constants_from_columns.r_p.n,177
+constants_from_columns.r_x.z_r,0.500159573
+constants_from_columns.r_x.spread,0.0590144452
+constants_from_columns.r_x.n,135
+constants_from_columns.sigma_B.alpha_gamma,0.997446328
+constants_from_columns.sigma_B.spread,0.010445067
+constants_from_columns.sigma_B.n,135
+constants_from_columns.sigma_p.alpha_gamma,0.999970819
+constants_from_columns.sigma_p.spread,0.0535997889
+constants_from_columns.sigma_p.n,177
+log_eps.n,180
+log_eps.mean,-4.14358271
+log_eps.std,0.509685758
+log_eps.median,-4.18890452
+log_eps.mean_eps,0.000149222496
+log_eps.geo_mean_eps,7.18484309e-05
+log_eps.mean_printed,-4.14521105
